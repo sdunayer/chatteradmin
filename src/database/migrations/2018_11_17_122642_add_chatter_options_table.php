@@ -15,7 +15,7 @@ class AddChatterOptionsTable extends Migration
     {
       Schema::create('chatter_options', function(Blueprint $table)
   		{
-  			$table->increments('id');
+  			$table->bigIncrements('id');
   			$table->string('option_name');
   			$table->text('option_value');
   			$table->string('autoload')->default('yes'); 
